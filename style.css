@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  width: 100vw;
+  height: 44px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  position: fixed;
+  z-index: 10;
+  nav {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+}
+.apple-logo {
+  width: 13px;
+  height: 16px;
+}
+.search-button {
+  width: 31px;
+  height: 44px;
+}
+.menu-button {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  .search-button {
+    margin-left: auto;
+  }
+  .donate {
+    height: 52px;
+  }
+}
+.donate {
+  width: 100vw;
+  height: 48px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+@media only screen and (max-width: 390px) {
+  .donate {
+    height: 73px;
+  }
+}
+.background {
+  width: 100vw;
+  height: 692px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.pro16 {
+  background-image: url(./images/Figure\ copy.png);
+}
+.normal16 {
+  background-image: url(./images/Figure.png);
+}
+.gift {
+  background-image: url(./images/giftdesk.png);
+}
+
+@media only screen and (max-width: 768px) {
+  .background {
+    height: 650px;
+  }
+  .pro16 {
+    background-image: url(./images/table1.png);
+  }
+  .normal16 {
+    background-image: url(./images/table2.png);
+  }
+  .gift {
+    background-image: url(./images/table3.jpeg);
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .background {
+    height: 500px;
+  }
+  .pro16 {
+    background-image: url(./images/phone1.png);
+  }
+  .normal16 {
+    background-image: url(./images/phone2.png);
+  }
+  .gift {
+    background-image: url(./images/phone3.jpeg);
+  }
+}
+
+h2 {
+  color: aliceblue;
+  font-size: 52px;
+  font-weight: 600;
+  font-family: "Inter", serif;
+}
+.note {
+  color: aliceblue;
+  font-family: "Inter", serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.box {
+  flex-direction: column;
+  width: 405px;
+  height: 172px;
+  position: absolute;
+  gap: 20px;
+}
+.pro {
+  top: 125px;
+  left: 765px;
+}
+.normal {
+  top: 55px;
+  left: 765px;
+}
+.beleg {
+  top: 446px;
+  left: 805px;
+}
+.buttons {
+  width: 207px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.blue-button {
+  width: 123px;
+  color: aliceblue;
+  background-color: #0071e3;
+  border: #0071e3 solid 1px;
+  border-radius: 999px;
+}
+.buy-button {
+  width: 68px;
+  color: #2997ff;
+  border: #2997ff solid 1px;
+  border-radius: 999px;
+}
+.white-button {
+  width: 123px;
+  background-color: aliceblue;
+  border-radius: 999px;
+  border: white solid 1px;
+}
+.white-buy-button {
+  width: 68px;
+  border: white solid 2px;
+  border-radius: 999px;
+}
+.shop-button {
+  width: 114px;
+  border-radius: 999px;
+  background-color: #0071e3;
+  border: #0071e3 solid 1px;
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  .pro {
+    top: 58px;
+    left: 182px;
+  }
+  .normal {
+    top: 58px;
+    left: 182px;
+  }
+  .beleg {
+    top: 430px;
+    left: 182px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  h2 {
+    font-family: "Inter", serif;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .note {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Inter", serif;
+  }
+  .box {
+    width: 241px;
+    height: 114px;
+    gap: 16px;
+  }
+  .pro {
+    top: 350px;
+    left: 75px;
+  }
+  .normal {
+    top: 36px;
+    left: 75px;
+  }
+  .beleg {
+    top: 350px;
+    left: 75px;
+  }
+}
