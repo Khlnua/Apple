@@ -10,6 +10,18 @@
   justify-content: center;
   align-items: center;
 }
+.centre {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+.centre-gift {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: flex-end;
+  padding-bottom: 50px;
+}
 header {
   width: 100vw;
   height: 44px;
@@ -113,13 +125,37 @@ header {
 }
 
 h2 {
-  color: aliceblue;
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  font-family: "Inter", serif;
+}
+h3 {
+  color: #1d1d1f;
   font-size: 52px;
   font-weight: 600;
   font-family: "Inter", serif;
 }
-.note {
+h4 {
+  color: black;
+  font-size: 42px;
+  font-weight: 600;
+  font-family: "Inter", serif;
+}
+h5 {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Inter", serif;
+}
+.note-white {
   color: aliceblue;
+  font-family: "Inter", serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.note-black {
+  color: #1d1d1f;
   font-family: "Inter", serif;
   font-size: 24px;
   font-weight: 400;
@@ -131,18 +167,7 @@ h2 {
   position: absolute;
   gap: 20px;
 }
-.pro {
-  top: 125px;
-  left: 765px;
-}
-.normal {
-  top: 55px;
-  left: 765px;
-}
-.beleg {
-  top: 446px;
-  left: 725px;
-}
+
 .buttons {
   width: 207px;
   height: 44px;
@@ -156,6 +181,8 @@ h2 {
   background-color: #0071e3;
   border: #0071e3 solid 1px;
   border-radius: 999px;
+  font-family: "Inter", serif;
+  height: 44px;
 }
 .buy-button {
   width: 68px;
@@ -184,18 +211,6 @@ h2 {
   color: white;
 }
 @media only screen and (max-width: 768px) {
-  .pro {
-    top: 58px;
-    left: 182px;
-  }
-  .normal {
-    top: 58px;
-    left: 182px;
-  }
-  .beleg {
-    top: 430px;
-    left: 182px;
-  }
 }
 @media only screen and (max-width: 390px) {
   h2 {
@@ -213,18 +228,6 @@ h2 {
     height: 114px;
     gap: 16px;
   }
-  .pro {
-    top: 350px;
-    left: 75px;
-  }
-  .normal {
-    top: 36px;
-    left: 75px;
-  }
-  .beleg {
-    top: 350px;
-    left: 75px;
-  }
 }
 .watchlogo {
   width: 26px;
@@ -236,7 +239,7 @@ h2 {
 }
 .products {
   display: grid;
-  grid-template-columns: 942px 942px;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 580px);
   gap: 10px;
 }
@@ -244,17 +247,108 @@ h2 {
   background-image: url(./images/griddesk/ipaddesk.png);
 }
 .airpod {
-  background-image: url(./images/airpoddesk.png);
+  background-image: url(./images/griddesk/airpoddesk.png);
 }
 .watch {
-  background-image: url(./images/watchdesk.png);
+  background-image: url(./images/griddesk/watchdesk.png);
 }
 .macbook {
-  background-image: url(./images/macbookdesk.png);
+  background-image: url(./images/griddesk/macbookdesk.png);
 }
 .trade {
-  background-image: url(./images/tradedesk.png);
+  background-image: url(./images/griddesk/tradedesk.png);
 }
 .card {
-  background-image: url(./images/carddesk.png);
+  background-image: url(./images/griddesk/carddesk.png);
+}
+.pack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 50px;
+}
+.title-with-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.central {
+  padding-top: 330px;
+}
+
+@media only screen and (max-width: 768px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 490px);
+    gap: 10px;
+  }
+  .ipad {
+    background-image: url(./images/gridtable/bussinesstable4.png);
+  }
+  .airpod {
+    background-image: url(./images/gridtable/airpodtable1.png);
+  }
+  .watch {
+    background-image: url(./images/gridtable/watchtable2.png);
+  }
+  .macbook {
+    background-image: url(./images/gridtable/macbooktable3.png);
+  }
+  .trade {
+    background-image: url(./images/gridtable/tradetable6.png);
+  }
+  .card {
+    background-image: url(./images/gridtable/dealstable5.png);
+  }
+  .pack {
+    gap: 10px;
+    text-align: center;
+    background-repeat: no-repeat;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 28px;
+  }
+  .note-black {
+    font-size: 18px;
+  }
+  .note-white {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .products {
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 500px);
+  }
+  .pack {
+    height: 500px;
+  }
+  .ipad {
+    background-image: url(./images/gridphone/bussinessphone4.png);
+  }
+  .airpod {
+    background-image: url(./images/gridphone/airpodphone1.png);
+  }
+  .watch {
+    background-image: url(./images/gridphone/watchphone2.png);
+  }
+  .macbook {
+    background-image: url(./images/gridphone/macbookphone3.png);
+  }
+  .trade {
+    background-image: url(./images/gridphone/tradephone6.png);
+  }
+  .card {
+    background-image: url(./images/gridphone/dealsphone5.png);
+  }
 }
