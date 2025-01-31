@@ -49,6 +49,16 @@ header {
 .menu-button {
   display: none;
 }
+.store {
+  width: 100px;
+  color: aliceblue;
+  background-color: #0071e3;
+  border: #0071e3 solid 1px;
+  border-radius: 999px;
+  font-family: "Inter", serif;
+  height: 44px;
+  text-decoration: none;
+}
 @media only screen and (max-width: 768px) {
   .navigation {
     display: none;
@@ -173,6 +183,7 @@ h5 {
   height: 44px;
   display: flex;
   justify-content: center;
+  align-content: center;
   gap: 16px;
 }
 .blue-button {
@@ -186,47 +197,36 @@ h5 {
 }
 .buy-button {
   width: 68px;
+  height: 44px;
   color: #2997ff;
   border: #2997ff solid 1px;
   border-radius: 999px;
   background-color: transparent;
 }
-.white-button {
-  width: 123px;
-  background-color: #2997ff;
-  border-radius: 999px;
-  border: #2997ff solid 1px;
-}
-.white-buy-button {
-  width: 68px;
-  border: #2997ff solid 2px;
-  border-radius: 999px;
-  background-color: transparent;
-}
-.shop-button {
-  width: 114px;
-  border-radius: 999px;
-  background-color: #0071e3;
-  border: #0071e3 solid 1px;
-  color: white;
-}
-@media only screen and (max-width: 768px) {
-}
+
 @media only screen and (max-width: 390px) {
   h2 {
     font-family: "Inter", serif;
     font-size: 30px;
     font-weight: 700;
   }
-  .note {
+  .note-black,
+  .note-white {
     font-size: 18px;
     font-weight: 400;
+    text-align: center;
     font-family: "Inter", serif;
   }
   .box {
     width: 241px;
     height: 114px;
     gap: 16px;
+  }
+  .pro {
+    padding-top: 300px;
+  }
+  h3 {
+    font-size: 30px;
   }
 }
 .watchlogo {
@@ -265,9 +265,17 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 16px;
   padding-top: 50px;
+}
+.textbox {
+  width: 430px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
 }
 .title-with-logo {
   display: flex;
@@ -277,7 +285,7 @@ h5 {
   gap: 16px;
 }
 .central {
-  padding-top: 330px;
+  padding-top: 300px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -306,9 +314,18 @@ h5 {
     background-image: url(./images/gridtable/dealstable5.png);
   }
   .pack {
-    gap: 10px;
-    text-align: center;
     background-repeat: no-repeat;
+  }
+  .textbox {
+    width: 260px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .card-text {
+    padding-top: 230px;
   }
   h2 {
     font-size: 28px;
@@ -329,6 +346,10 @@ h5 {
     gap: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 500px);
+  }
+  .note-black,
+  .note-white {
+    font-size: 16px;
   }
   .pack {
     height: 500px;
@@ -351,4 +372,146 @@ h5 {
   .card {
     background-image: url(./images/gridphone/dealsphone5.png);
   }
+}
+
+.stream-button {
+  width: 93px;
+  height: 34px;
+  color: black;
+  background-color: white;
+  border: white solid 1px;
+  border-radius: 999px;
+  font-family: "Inter", serif;
+  font-size: 15px;
+}
+.genre {
+  font-family: "Inter", serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: white;
+}
+span {
+  font-weight: 600;
+}
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 600px;
+  left: 20px;
+}
+.cover {
+  width: 1250px;
+  height: 668px;
+}
+.content {
+  position: relative;
+  scroll-snap-align: center;
+}
+.scrolled-contents {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  align-items: center;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .cover {
+    width: 689px;
+    height: 368px;
+  }
+  .info {
+    top: 320px;
+    left: 20px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .cover {
+    width: 274px;
+    height: 495px;
+  }
+  .info {
+    top: 420px;
+    left: 20px;
+  }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.dot {
+  background-color: gray;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.apple-items {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  align-items: center;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.item-pic {
+  width: 417px;
+  height: 236px;
+}
+.slide {
+  border: 1px solid transparent;
+  position: relative;
+  scroll-snap-align: center;
+}
+.slide-note {
+  font-family: "Inter", serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  top: 210px;
+  left: 20px;
+}
+
+.play-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 93px;
+  height: 34px;
+  color: black;
+  background-color: white;
+  border: white solid 1px;
+  border-radius: 999px;
+  font-family: "Inter", serif;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 10;
+}
+
+.layer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  background-color: black;
+  opacity: 0;
+}
+.slide:hover .layer {
+  opacity: 0.2;
+}
+.slide:hover .play-buttons {
+  opacity: 1;
 }
