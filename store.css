@@ -230,12 +230,11 @@ h4 {
   scrollbar-width: none;
 }
 .textcustom {
-  padding-left: 30px;
+  padding-left: 20px;
   /* padding-bottom: 20px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
 }
 .ps-first-pic {
   width: 313px;
@@ -264,7 +263,10 @@ h4 {
 }
 .textcustom {
   position: absolute;
-  padding-top: 300px;
+  padding-top: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .ps-pic {
   width: 230px;
@@ -278,6 +280,106 @@ h4 {
   height: 500px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-shrink: 0;
+}
+.access-products {
+  /* width: 100vw; */
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  align-items: center;
+  padding-top: 30px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.services,
+.savings {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  align-items: center;
+  padding-top: 30px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.service-pic {
+  width: 480px;
+  height: 500px;
+  border-radius: 20px;
+}
+.service-item {
+  position: relative;
+}
+.savings-pic {
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+}
+.engraving-white {
+  font-family: "Inter", serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
+}
+.footer {
+  width: 100vw;
+  height: 96px;
+}
+.quick-buttons {
+  height: 34px;
+  display: flex;
+  gap: 16px;
+}
+.quick {
+  border: #6e6e73 solid 1px;
+  border-radius: 999px;
+  padding: 5px;
+}
+.quick-link {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6e6e73;
+}
+.colors {
+  width: 12px;
+  height: 12px;
+}
+.step-item {
+  position: relative;
+}
+.steps {
+  display: flex;
+  gap: 10px;
+}
+.only-apple-pic {
+  width: 480px;
+  height: 500px;
+  border-radius: 20px;
+}
+.boxes {
+  width: 580px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.reading {
+  width: 280px;
+  height: 245px;
+  border: white solid 1px;
+  border-radius: 20px;
+  background-color: white;
+  font-family: "Inter", serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  color: black;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
