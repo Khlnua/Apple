@@ -355,6 +355,8 @@ h4 {
 .steps {
   display: flex;
   gap: 10px;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 .only-apple-pic {
   width: 480px;
@@ -364,6 +366,7 @@ h4 {
 .boxes {
   width: 580px;
   height: 500px;
+  flex-shrink: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
